@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-family: "Maven Pro", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	overflow: hidden;
+}
+
+.viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+}
+
+/* main content */
+.card {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: snow;
+	height: 100vh;
+	z-index: 999;
+	padding: 1em;
+}
+
+.card-content {
+	/* display: flex; */
+	/* justify-content: center;
+	align-items: center; */
+	overflow: hidden;
+	border-radius: 8px;
+	background-color: #000000d9;
+	transition:
+		opacity cubic-bezier(0.14, 0.22, 0, 1) 4s,
+		opacity cubic-bezier(0.14, 0.22, 0, 1) 5s;
+	padding: 0em;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	padding: 1.5em;
+}
+
+#card-content::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	backdrop-filter: blur(5px);
+}
+
+@media (prefers-reduced-motion) {
+	.viewport {
+		display: none;
+	}
+}
+
+.avi img {
+	border-radius: 8px;
+	max-width: 50px;
+}
+
+.nav {
+	box-shadow:
+		0 0 2px 0px #fff,
+		inset 0 0 2px #fff,
+		0px 0px 3px 2px #f13292,
+		inset 0 0 10px 1px #f13292,
+		0 0 3px #f13292,
+		inset 0 0 4px #f13292;
+	border-radius: 3px;
+	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
+	padding: 1em;
+}
