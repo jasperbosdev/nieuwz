@@ -61,7 +61,7 @@ body {
 	padding: 1.5em;
 }
 
-#card-content::before {
+.card-content::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -80,10 +80,23 @@ body {
 
 .avi img {
 	border-radius: 8px;
-	max-width: 50px;
+	max-width: 64px;
 }
 
 .nav {
+	box-shadow:
+		0 0 2px 0px #fff,
+		inset 0 0 2px #fff,
+		0px 0px 3px 2px #f13292,
+		inset 0 0 10px 1px #f13292,
+		0 0 3px #f13292,
+		inset 0 0 4px #f13292;
+	border-radius: 3px;
+	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
+	padding: 1em;
+}
+
+.border {
 	box-shadow:
 		0 0 2px 0px #fff,
 		inset 0 0 2px #fff,
