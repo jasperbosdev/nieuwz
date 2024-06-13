@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.5.10",
-		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@tsconfig/svelte": "^5.0.4",
 		"@types/node": "^20.14.2",
 		"@types/three": "^0.165.0",
@@ -28,6 +28,8 @@
 	"type": "module",
 	"dependencies": {
 		"preprocess": "^3.2.0",
-		"three": "^0.165.0"
+		"sk-lanyard": "^0.2.7",
+		"three": "^0.165.0",
+		"writable": "^0.1.0"
 	}
 }

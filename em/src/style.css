@@ -48,7 +48,8 @@ body {
 	align-items: center; */
 	overflow: hidden;
 	border-radius: 8px;
-	background-color: #000000d9; /* maybe remove? */
+	/* background-color: #000000d9; */
+	 /* maybe remove? */
 	transition:
 		opacity cubic-bezier(0.14, 0.22, 0, 1) 4s,
 		opacity cubic-bezier(0.14, 0.22, 0, 1) 5s;
@@ -93,10 +94,10 @@ body {
 		inset 0 0 4px #f13292;
 	border-radius: 3px;
 	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
-	padding: 1em;
+	padding: 1em 1.5em;
 }
 
-.border {
+.deck-border {
 	box-shadow:
 		0 0 2px 0px #fff,
 		inset 0 0 2px #fff,
@@ -107,4 +108,14 @@ body {
 	border-radius: 3px;
 	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
 	padding: 1em;
+}
+
+.border-bg {
+	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
+}
+
+
+/* [ACTIVITY] */
+.activity-img {
+	max-width: 128px;
 }
