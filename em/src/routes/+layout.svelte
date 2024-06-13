@@ -11,7 +11,7 @@
   });
 </script>
 
-<!-- <div class="viewport"></div>  -->
+<div class="viewport"></div> 
 <!-- background -->
 
 <div class="container mx-auto">
@@ -36,7 +36,7 @@
       </div>
 
 
-      <div class="py-10">
+      <div class="py-12">
         <slot />
       </div>
 
