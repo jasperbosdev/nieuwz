@@ -29,17 +29,20 @@
             @em 🐈<br>
             <!-- activity<br> --> <!-- todo -->
             {#if $presence}
-                {$presence.discord_status || "error fetching status"}<br>
-                {:else if $presence === null}
-                    Error fetching data.<br>
-                {:else}
-                    loading...<br>
-            {/if}
-            {#if $presence}
                 {#if $presence.spotify}
-                    🎶 {($presence.spotify.song.length > 20) ? `${$presence.spotify.song.slice(0, 20)}...` : $presence.spotify.song}<br>
-                    <!-- by {$presence.spotify.artist}<br> -->
+                    {#if $presence.spotify.song}
+                        🎶 {($presence.spotify.song.length > 20) ? `${$presence.spotify.song.slice(0, 20)}...` : $presence.spotify.song}<br>
+                    {/if}
+                    {#if $presence.spotify.artist}
+                        🎤 {($presence.spotify.artist.length > 20) ? `${$presence.spotify.artist.slice(0, 20)}...` : $presence.spotify.artist}<br>
+                    {/if}
+                {:else}
+                    {$presence.discord_status || "error fetching status"}<br>
                 {/if}
+            {:else if $presence === null}
+                Error fetching data.<br>
+            {:else}
+                loading...<br>
             {/if}
             {localTime}
     </div>
