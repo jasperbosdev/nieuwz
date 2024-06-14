@@ -11,7 +11,7 @@
   });
 </script>
 
-<div class="viewport"></div> 
+<!-- <div class="viewport"></div> dev purposes on low end pc -->
 <!-- background -->
 
 <div class="container mx-auto">
@@ -31,7 +31,7 @@
           <div href="#/"><a href="#/">/contact</a></div>
         </div>
         <div class="brand avi">
-          <a href="#/"><i class="fa fa-heart fa-xl transition duration-200 hover:-translate-y-1.5"></i></a>
+          <a href="#/"><i class="fa fa-heart fa-xl transition delay-0 duration-200 hover:-translate-y-1.5"></i></a>
         </div>
       </div>
 
