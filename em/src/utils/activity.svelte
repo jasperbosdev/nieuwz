@@ -2,7 +2,7 @@
     import { useLanyard } from 'sk-lanyard';
     import { onMount } from 'svelte';
 
-    const presence = useLanyard({ method: 'ws', id: '726110048287326288' });
+    const presence = useLanyard({ method: 'ws', id: '673304389875925003' });
 
     let localTime = '';
 
