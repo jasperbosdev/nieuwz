@@ -54,7 +54,7 @@
             {#if $presence.spotify}
                 <img src="{$presence.spotify.album_art_url}" alt="spotify-album" class="rounded-lg activity-img">
             {:else}
-                <img src="https://via.placeholder.com/128" alt="placeholder-img" class="rounded-lg activity-img">
+                <img src="https://a.ppy.sh/6519705?1598577889.jpeg" alt="placeholder-img" class="rounded-lg activity-img">
             {/if}
         {/if}
     </div>
