@@ -19,9 +19,7 @@
         </div>
     </div>
     <div class="activity-card flex justify-end items-center">
-        <div class="grid grid-cols-2 gap-8 grid-flow-row deck-border items-center">
-            <Activity /> <!-- using lanyard for discord activity; spotify, games etc -->
-        </div>
+        <Activity /> <!-- using lanyard for discord activity; spotify, games etc -->
     </div>
 </div>
 
