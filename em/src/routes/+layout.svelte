@@ -11,7 +11,7 @@
   });
 </script>
 
-<!-- <div class="viewport"></div> dev purposes on low end pc -->
+<div class="viewport"></div>
 <!-- background -->
 
 <div class="container mx-auto">
@@ -21,7 +21,7 @@
       <div class="flex justify-between nav items-center"> <!-- navbar -->
         <div class="brand avi">
           <a href="/">
-            <img src="https://a.ppy.sh/6519705?1598577889.jpeg" alt="logo"
+            <img src="/pfp.jpg" alt="logo"
             class="transition duration-200 hover:-translate-y-1.5">
           </a>
         </div>
@@ -36,7 +36,7 @@
       </div>
 
 
-      <div class="py-12">
+      <div class="py-20">
         <slot />
       </div>
 
