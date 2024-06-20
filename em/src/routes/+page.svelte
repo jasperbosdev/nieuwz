@@ -1,11 +1,12 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import tilt  from 'svelte-tilt';
     import Activity from '../utils/activity.svelte'; // Ensure the path is correct
 
     onMount(() => {});
 </script>
 
-<div class="grid grid-rows-1 grid-flow-col mb-12"> <!-- maybe add 1.5em x padding to even with nav items-->
+<div class="grid grid-rows-1 grid-flow-col mb-20"> <!-- maybe add 1.5em x padding to even with nav items-->
     <div class="me-card">
         <p class="bold text-6xl"><span class="text-fuchsia-400">Ir</span>cle</p>
         <div class="flex items-center socials mt-4">
@@ -19,16 +20,20 @@
         </div>
     </div>
     <div class="activity-card flex justify-end items-center">
-        <Activity /> <!-- using lanyard for discord activity; spotify, games etc -->
+        <div class="grid grid-cols-[1fr_auto] deck-border items-center" use:tilt={{ strength: 1.5, scale: 1.1 }}>
+            <Activity /> <!-- using lanyard for discord activity; spotify, games etc -->
+        </div>
     </div>
 </div>
 
 <!-- divider -->
-<!-- <div class="mb-12">
+<!-- <div class="mb-20">
     <div class="split deck-split text-center">🐈</div> 
 </div> -->
 
 <div class="yapping">
-    wdwqiodqowidj oqwdoqiwoqwjdqow qwoi qwoi iojdqwiodqwoiqwd oijqwd iojdqw oijwqd iojwqd qwd ijoqwd qwd wqd iojwd oiqwj oqiwdqowi qwoi qwoi 
-    qwdiqwjd iqwojqwiqwo qwoidqwo qwoiqwoidqw dqwm qwdm qw mw mmm, wdqwdqwok  qwodkqo!
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a tempus est. 
+    Nullam dignissim sem at mattis vehicula. Suspendisse accumsan ut purus sollicitudin dignissim. 
+    Proin mollis lectus vitae elit tincidunt molestie. Nunc congue luctus tortor, id viverra risus maximus sit amet. 
+    Morbi egestas augue ante, vel commodo quam vehicula ut. Donec pellentesque nunc tristique elit bibendum, ac sagittis mi rhoncus.
 </div>
