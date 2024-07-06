@@ -12,9 +12,10 @@
 </script>
 
 <div class="viewport"></div>
+<div class="viewport-bg"></div>
 <!-- background -->
 
-<div class="container mx-auto">
+<div class="container mx-auto max-w-7xl">
   <div class="card"> <!-- container, main card and card content -->
     <div class="card-content">
 
@@ -28,6 +29,7 @@
         <div class="brand avi flex gap-x-14">
           <div href="#/"><a href="#/">/home</a></div>
           <div href="#/"><a href="#/">/content</a></div>
+          <div target="_blank"><a href="https://komako.pw">/komako</a></div>
           <div href="#/"><a href="#/">/contact</a></div>
         </div>
         <div class="brand avi">

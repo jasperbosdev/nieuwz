@@ -29,6 +29,14 @@ body {
 	z-index: -1;
 }
 
+.viewport-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(340, 25%, 25%, 0.125);
+	z-index: -1;
+}
+
 /* main content */
 .card {
 	margin: 0;
