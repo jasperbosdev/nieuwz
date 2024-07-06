@@ -8,7 +8,7 @@
 
 <div class="grid grid-rows-1 grid-flow-col mb-20"> <!-- maybe add 1.5em x padding to even with nav items-->
     <div class="me-card">
-        <p class="bold text-6xl"><span class="text-fuchsia-400">Ir</span>cle</p>
+        <p class="bold text-6xl"><span class="text-fuchsia-400">Li</span>onz</p>
         <div class="flex items-center socials mt-4">
             <div class="deck-border py-2 px-4 flex gap-x-4"> <!-- maybe remove border class n padding -->
                 <a href="#/" target="_blank" class="transition delay-0 duration-200 hover:-translate-y-1.5"><i class="far fa-lg fa-envelope"></i></a>
