@@ -1,8 +1,9 @@
 <script lang="ts">
     import { useLanyard } from 'sk-lanyard';
-    import { onMount } from 'svelte';
+    import { onMount, onDestroy } from 'svelte';
+    import { startRainbowEffect } from './rainbowtext';
 
-    const presence = useLanyard({ method: 'ws', id: '673304389875925003' });
+    const presence = useLanyard({ method: 'ws', id: '673304389875925003', heartbeat_interval: 10000 });
     let localTime = '';
     let showMoreActivities = false; // Initialize showMoreActivities here
     let activityDurations = {};
@@ -44,8 +45,12 @@
     onMount(() => {
         updateTime();
         const intervalId = setInterval(updateTime, 1000);
-
+        const stopEffect = startRainbowEffect();
         return () => clearInterval(intervalId);
+
+        onDestroy(() => {
+            stopEffect();
+        });
     });
 
     // Filter activities to exclude "custom" and "spotify:1" activities
@@ -56,6 +61,7 @@
     function getActivityWithSessionId(activities) {
         return activities.find(activity => activity.session_id);
     }
+
 </script>
 
 <div class="activity-info text-end pl-5">
@@ -64,8 +70,22 @@
             <div class="flex items-center">
                 <div class="text-container text-center mr-4">
                     @em 🐈<br>
-                    🎶 {($presence.spotify.song.length > 20) ? `${$presence.spotify.song.slice(0, 20)}...` : $presence.spotify.song}<br>
-                    🎤 {($presence.spotify.artist.length > 20) ? `${$presence.spotify.artist.slice(0, 20)}...` : $presence.spotify.artist}<br>
+                    🎶 {($presence.spotify.song.length > 15) ? `${$presence.spotify.song.slice(0, 15)}...` : $presence.spotify.song}<br>
+                    {#if $presence.spotify.artist == 'Sqwore'}
+                    <span class="rgbtq">🎤 Sqwore 👑</span><br>
+                    {:else if $presence.spotify.artist == 'Sqwore; 17 SEVENTEEN'}
+                    <span class="rgbtq">🎤 Sqwore; 17 SEVENTEEN 👑</span><br>
+                    {:else if $presence.spotify.artist == 'Sqwore; Grechka'}
+                    <span class="rgbtq">🎤 Sqwore; Grechka 👑</span><br>
+                    {:else if $presence.spotify.artist == 'Sqwore; rizza'}
+                    <span class="rgbtq">🎤 Sqwore; rizza 👑</span><br>
+                    {:else if $presence.spotify.artist == 'rizza; Sqwore'}
+                    <span class="rgbtq">🎤 rizza; Sqwore 👑</span><br>
+                    {:else if $presence.spotify.artist == 'treepside; Sqwore'}
+                    <span class="rgbtq">🎤 treepside; Sqwore 👑</span><br>
+                    {:else}
+                    🎤 {($presence.spotify.artist.length > 15) ? `${$presence.spotify.artist.slice(0, 15)}...` : $presence.spotify.artist}<br>
+                    {/if}
                     {localTime}<br>
                     {#if activityDurations[$presence.spotify.id]}
                         For {activityDurations[$presence.spotify.id]}
@@ -110,7 +130,7 @@
                         {localTime}
                     </div>
                     <div class="img-container">
-                        <img src="https://a.ppy.sh/6519705?1598577889.jpeg" alt="placeholder-img" class="rounded-lg activity-img">
+                        <img src="../pfp.jpg" alt="placeholder-img" class="rounded-lg activity-img">
                     </div>
                 </div>
             {/if}
