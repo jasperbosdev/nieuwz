@@ -27,10 +27,10 @@
           </a>
         </div>
         <div class="brand avi flex gap-x-14">
-          <div href="#/"><a href="#/">/home</a></div>
-          <div href="#/"><a href="#/">/content</a></div>
-          <div target="_blank"><a href="https://komako.pw">/komako</a></div>
-          <div href="#/"><a href="#/">/contact</a></div>
+          <div><a href="#/">/home</a></div>
+          <div><a href="#/">/content</a></div>
+          <div><a href="https://komako.pw" target="_blank">/komako</a></div>
+          <div><a href="#/">/contact</a></div>
         </div>
         <div class="brand avi">
           <a href="#/"><i class="fa fa-heart fa-xl transition delay-0 duration-200 hover:-translate-y-1.5"></i></a>
