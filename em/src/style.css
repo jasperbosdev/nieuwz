@@ -16,23 +16,106 @@ html {
 
 body {
 	background-color: #000;
-	overflow: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
-.viewport {
-	position: absolute;
-	width: 100%;
+.nav-item {
+	position: relative;
+	overflow: hidden;
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	transition: ease-in-out all 0.1s;
+}
+
+.nav-item::after {
+	content: "";
+	position: absolute;
+	bottom: -60%;
+	left: 0;
+	width: 100%;
+	height: 55%;
+	background-color: #f13291d4;
+	transition: bottom 0.3s ease-in-out;
 	z-index: -1;
 }
 
-.viewport-bg {
+.nav-item.active::after {
+	bottom: 0;
+}
+
+.nav-item:hover::after {
+	bottom: 0;
+}
+
+.has-dropdown {
+	position: relative;
+}
+
+.has-dropdown:hover .nav-dropdown {
+	opacity: 1;
+}
+
+.nav-dropdown {
+	display: flex;
+	flex-direction: column;
 	position: absolute;
-	width: 100%;
+	overflow: hidden;
+	opacity: 0;
+	transition:
+		max-height 0.3s ease-in-out,
+		opacity 0.3s ease-in-out;
+	overflow-y: hidden;
+}
+
+.dropdown-item {
+	position: relative;
 	height: 100%;
+	transition: ease-in-out all 0.1s;
+}
+
+.dropdown-item::after {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	right: 100%;
+	width: 100%;
+	height: 55%;
+	background-color: #f13291d4;
+	transition: right 0.3s ease-in-out;
+	z-index: -1;
+}
+
+.dropdown-item.active::after {
+	right: 0;
+}
+
+.dropdown-item:hover::after {
+	right: 0;
+}
+
+.support {
+	transition: ease-in-out all 0.15s;
+}
+
+.support:hover {
+	color: #f13292;
+}
+
+.viewport {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; /* Ensure it covers the entire viewport */
+	z-index: -2;
+}
+
+.viewport-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; /* Ensure it covers the entire viewport */
 	background-color: hsla(340, 25%, 25%, 0.125);
 	z-index: -1;
 }
@@ -41,14 +124,12 @@ body {
 .card {
 	margin: 0;
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	flex-direction: column;
 	color: snow;
-	height: 100vh;
-	z-index: 999;
-	/* padding: 1em; */
-	/* maybe disable/enable depending on if I wanna use card bg */
+	min-height: 100vh; /* Ensures card takes up at least viewport height */
+	z-index: 1;
 }
 
 .card-content {
@@ -58,7 +139,7 @@ body {
 	overflow: hidden;
 	border-radius: 8px;
 	/* background-color: #000000d9; */
-	 /* maybe remove? */
+	/* maybe remove? */
 	transition:
 		opacity cubic-bezier(0.14, 0.22, 0, 1) 4s,
 		opacity cubic-bezier(0.14, 0.22, 0, 1) 5s;
@@ -73,7 +154,7 @@ body {
 
 .card-content::before {
 	content: "";
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -136,8 +217,174 @@ body {
 	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
 }
 
-
 /* [ACTIVITY] */
 .activity-img {
 	max-width: 128px;
+}
+
+/* [TYPEDJS ANIMATION] */
+.typed {
+	display: inline;
+}
+
+.typed-cursor {
+	margin-left: 2px;
+	display: inline;
+	font-size: inherit;
+}
+
+/* [PROJECTS] */
+.project-single {
+	position: relative;
+	transition: ease-in-out all 0.15s;
+	box-shadow:
+		0 0 2px 0px #fff,
+		inset 0 0 2px #fff,
+		0px 0px 3px 2px #f13292,
+		inset 0 0 10px 1px #f13292,
+		0 0 3px #f13292,
+		inset 0 0 4px #f13292;
+	border-radius: 3px;
+	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
+	padding: 1em;
+	flex: 1 0 30%;
+	/* 1 0 calc(33.33% - 2em) */
+}
+
+.project-single:hover {
+	transition: ease-in-out all 0.15s;
+}
+
+.project-desc a,
+.project-footer a {
+	transition: ease-in-out all 0.15s;
+}
+
+.project-desc a:hover,
+.project-footer a:hover {
+	color: #f13292;
+}
+
+.project-footer {
+	position: absolute;
+	bottom: 5%;
+}
+
+/* [OSU] */
+.playstyle a {
+	transition: ease-in-out all 0.15s;
+}
+
+.playstyle a:hover {
+	color: #f13292;
+}
+
+/* [SVELTE LIGHTBOX] */
+.svelte-lightbox-main {
+	display: flex;
+	justify-content: center;
+}
+
+.svelte-lightbox-body {
+	display: flex;
+	justify-content: center;
+	max-width: 90%;
+}
+
+/* [MOUSE SCROLL ANIMATION] */
+
+.mouse {
+	margin: 0.5em 1em;
+}
+
+.mouse-icon {
+	width: 25px;
+	height: 45px;
+	border: 2px solid white;
+	border-radius: 15px;
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+}
+
+.mouse-wheel {
+	height: 6px;
+	margin: 2px auto 0;
+	display: block;
+	width: 3px;
+	background-color: white;
+	border-radius: 50%;
+	-webkit-animation: 1.6s ease infinite wheel-up-down;
+	-moz-animation: 1.6s ease infinite wheel-up-down;
+	animation: 1.6s ease infinite wheel-up-down;
+}
+
+@-webkit-keyframes wheel-up-down {
+	0% {
+		margin-top: 2px;
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	100% {
+		margin-top: 20px;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes wheel-up-down {
+	0% {
+		margin-top: 2px;
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	100% {
+		margin-top: 20px;
+		opacity: 0;
+	}
+}
+
+@keyframes wheel-up-down {
+	0% {
+		margin-top: 2px;
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	100% {
+		margin-top: 20px;
+		opacity: 0;
+	}
+}
+
+/* [SCROLLBAR] */
+/* Global scrollbar styles */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1B1320;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f13292;
+}
+
+/* [ABOUTME] */
+.artist-card {
+	box-shadow:
+		0 0 2px 0px #fff,
+		inset 0 0 2px #fff,
+		0px 0px 3px 2px #f13292,
+		inset 0 0 10px 1px #f13292,
+		0 0 3px #f13292,
+		inset 0 0 4px #f13292;
+	border-radius: 3px;
+	background: linear-gradient(90deg, rgba(87, 89, 123, 19%), rgba(149, 1, 169, 29%) 90%);
+	padding: 1em 1.5em;
 }
