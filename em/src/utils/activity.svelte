@@ -59,7 +59,7 @@
     }
 
     function getActivityWithSessionId(activities) {
-        return activities.find(activity => activity.session_id);
+        return activities.find(activity => activity.id);
     }
 
 </script>
@@ -68,7 +68,7 @@
     {#if $presence}
         {#if $presence.spotify}
             <div class="flex items-center">
-                <div class="text-container text-center mr-4">
+                <div class="text-container text-base md:text-lg md:text-md text-center mr-4">
                     @em 🐈<br>
                     🎶 {($presence.spotify.song.length > 15) ? `${$presence.spotify.song.slice(0, 15)}...` : $presence.spotify.song}<br>
                     {#if $presence.spotify.artist == 'Sqwore'}
@@ -83,6 +83,8 @@
                     <span class="rgbtq">🎤 rizza; Sqwore 👑</span><br>
                     {:else if $presence.spotify.artist == 'treepside; Sqwore'}
                     <span class="rgbtq">🎤 treepside; Sqwore 👑</span><br>
+                    {:else if $presence.spotify.artist == 'ЕГОР НАТС'}
+                    <span class="rgbtq">ЕГОР НАТС 👑</span><br>
                     {:else}
                     🎤 {($presence.spotify.artist.length > 15) ? `${$presence.spotify.artist.slice(0, 15)}...` : $presence.spotify.artist}<br>
                     {/if}
@@ -92,7 +94,7 @@
                     {/if}
                     {#if getOtherActivities($presence.activities).length > 0 && !showMoreActivities}
                     <button on:click={() => showMoreActivities = true}>
-                        Show more
+                        <span class="rgbtq">Show more</span>
                     </button>
                     {/if}
                 </div>
@@ -106,7 +108,7 @@
             {@const activityWithSessionId = getActivityWithSessionId($presence.activities)}
             {#if activityWithSessionId}
                 <div class="flex items-center">
-                    <div class="text-container text-center mr-4">
+                    <div class="text-container text-base md:text-lg md:text-md text-center mr-4">
                         @em 🐈<br>
                         {activityWithSessionId.name}
                         <!-- {activityWithSessionId.state} -->
@@ -119,18 +121,22 @@
                         {localTime}<br>
                     </div>
                     <div class="img-container">
-                        <img src={"https://cdn.discordapp.com/app-assets/" + activityWithSessionId.application_id + "/" + activityWithSessionId.assets.large_image} alt={activityWithSessionId.assets.large_text} title={activityWithSessionId.assets.large_text} class="rounded-lg activity-img">
+                        {#if activityWithSessionId.assets && activityWithSessionId.assets.large_image}
+                            <img src={"https://cdn.discordapp.com/app-assets/" + activityWithSessionId.application_id + "/" + activityWithSessionId.assets.large_image} alt={activityWithSessionId.assets.large_text} title={activityWithSessionId.assets.large_text} class="rounded-lg activity-img">
+                        {:else}
+                            <img src="/pfpp.jpg" alt="placeholder-img" class="rounded-lg activity-img">
+                        {/if}
                     </div>
                 </div>
             {:else}
                 <div class="flex items-center">
-                    <div class="text-container text-center mr-4">
+                    <div class="text-container text-base md:text-lg md:text-md text-center mr-4">
                         @em 🐈<br>
                         {$presence.discord_status || "error fetching status"}<br>
                         {localTime}
                     </div>
                     <div class="img-container">
-                        <img src="../pfp.jpg" alt="placeholder-img" class="rounded-lg activity-img">
+                        <img src="../pfpp.jpg" alt="placeholder-img" class="rounded-lg activity-img">
                     </div>
                 </div>
             {/if}
@@ -140,7 +146,7 @@
         {#if showMoreActivities}
             {#each getOtherActivities($presence.activities) as activity}
                 <div class="flex items-center mt-4">
-                    <div class="text-container text-center mr-4">
+                    <div class="text-container text-base md:text-lg md:text-md text-center mr-4">
                         {activity.name}<br>
                         <!-- {activity.state} -->
                         {#if activity.details}
@@ -150,7 +156,7 @@
                             For {activityDurations[activity.id]}<br>
                         {/if}
                         <button class="" on:click={() => showMoreActivities = false}>
-                            Show less
+                            <span class="rgbtq">Show less</span>
                         </button>
                     </div>
                     <div class="img-container">
