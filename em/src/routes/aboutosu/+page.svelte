@@ -2,16 +2,13 @@
     import tilt  from 'svelte-tilt';
 </script>
 
-<div class="grid grid-cols-3 playstyle mb-10">
-    <div class="col-span-2">
-        <p class="bold text-6xl"><span class="text-fuchsia-400">/a</span>boutosu</p>
-        <div class="flex flex-row items-center">
-            former top 🌐 987 | <img src="/NL.svg" class="rounded w-6 mx-2"> 20 | <img src="/GR.svg" class=" h-4 mx-2 rounded"> 1 @11,328pp
-        </div>
+<div class="playstyle mb-10">
+    <p class="bold text-6xl"><span class="text-fuchsia-400">/a</span>boutosu</p>
+    <div class="flex flex-row items-center">
+        <span class="flex text-sm md:text-lg items-center">
+            former top 🌐 987 | <img src="/NL.svg" class="rounded h-5 mx-2"> 20 | <img src="/GR.svg" class=" h-4 mx-2 rounded"> 1 @11,328pp
+        </span>
     </div>
-    <!-- <div class="activity-card flex justify-end items-center">
-        123
-    </div> -->
 </div>
 
 <div class="yapping mb-10">
