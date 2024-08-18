@@ -40,16 +40,19 @@
     });
 </script>
 
-<div class="grid grid-rows-1 grid-flow-col mb-10"> <!-- maybe add 1.5em x padding to even with nav items-->
-    <div class="me-card">
+<div class="grid grid-rows-1 grid-flow-col mb-10 grid-cols-3"> <!-- maybe add 1.5em x padding to even with nav items-->
+    <div class="me-card col-span-2">
         <p class="bold text-6xl"><span class="text-fuchsia-400">/</span>osu</p>
-        <p>Here you can learn more about my playstyle and the skins I use. Check out my <a href="/aboutosu" 
-            class="text-fuchsia-400 support">/aboutosu</a> page if you wanna learn more about my osu journey.</p>
+        <p>
+            Here you can learn more about my playstyle, the hardware I use to play and all the skins I play with. Check out my <a href="/aboutosu" 
+            class="text-fuchsia-400 support">/aboutosu</a> page if you wanna learn more about my achievements and other minute details 
+            about my osu! journey.
+        </p>
     </div>
 </div>
 
 <div class="grid grid-cols-3 gap-6 playstyle">
-    <div class="col-span-2">
+    <div class="col-span-2 py-5">
         <p class="bold text-5xl mb-4"><span class="text-fuchsia-400">Pl</span>aystyle</p>
         This is my current playstyle/setup for osu! Click <a href="/current.jpg" target="_blank" class="text-fuchsia-400">here
         (very outdated)</a> to see my setup in all its glory! I play tablet with my left hand and tap mostly full alt, 
@@ -65,8 +68,10 @@
             <a href="https://wooting.io/wooting-60he" target="_blank" class="text-fuchsia-400 support">Wooting 60HE+ w/ Linear45</a><br>
             <a href="https://wooting.io/configurator/wooting-uwu?model=RGB+White&quantity=1&addon=none" 
             target="_blank" class="text-fuchsia-400 support">Wooting UwU RGB</a><br>
+            <a href="https://oblotzky.industries/products/nk65-milkshake-edition" target="_blank" class="text-fuchsia-400 support">
+                NK65 Milkshake Edition</a><br>
             <a href="#/" class="text-fuchsia-400 support">Wacom 470, 472, 480 and 680</a>
-            <br><span class="text-sm">Last updated: 25.07.2024</span>
+            <br><span class="text-sm">Last updated: 18.08.2024</span>
         </div>
     </div>
 </div>
@@ -85,6 +90,7 @@
 
 <div class="mb-4">
     <p class="bold text-5xl"><span class="text-fuchsia-400">Sk</span>ins</p>
+    <span class="text-sm">Last updated: 18.08.2024</span>
 </div>
 
 <div class="project-container flex flex-row flex-wrap gap-6">
