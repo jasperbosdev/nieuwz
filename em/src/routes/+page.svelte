@@ -21,6 +21,10 @@
    });
 </script>
 
+<svelte:head>
+   <title>@lionz 🐈</title>
+</svelte:head>
+
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 gap-10 md:gap-0"> <!-- maybe add 1.5em x padding to even with nav items-->
     <div class="me-card flex flex-col justify-center md:justify-start items-center md:items-start">
         <p class="bold text-6xl"><span class="text-fuchsia-400">Li</span>onz</p>

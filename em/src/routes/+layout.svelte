@@ -137,7 +137,7 @@
           <span class="font-bold">&#x2022;</span>
           <div class="around-nav"><div class="nav-item text-sm"><a href="https://t.me/dumpup" target="_blank">/contact</a></div></div>
         </div>
-        <p>© 2021 - {currentYear} 🐈 em</p>
+        <p>© 2021 - {currentYear} 🐈 lionz</p>
       </footer>
 
     </div>

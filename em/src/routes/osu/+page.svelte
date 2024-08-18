@@ -40,6 +40,10 @@
     });
 </script>
 
+<svelte:head>
+    <title>@lionz 🐈 Osu</title>
+</svelte:head>
+
 <div class="grid grid-rows-1 grid-flow-col mb-10 grid-cols-1 md:grid-cols-3"> <!-- maybe add 1.5em x padding to even with nav items-->
     <div class="me-card col-span-2">
         <p class="bold text-6xl"><span class="text-fuchsia-400">/</span>osu</p>

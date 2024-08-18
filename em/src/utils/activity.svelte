@@ -69,7 +69,7 @@
         {#if $presence.spotify}
             <div class="flex items-center">
                 <div class="text-container text-base md:text-lg md:text-md text-center mr-4">
-                    @em 🐈<br>
+                    @lionz 🐈<br>
                     🎶 {($presence.spotify.song.length > 15) ? `${$presence.spotify.song.slice(0, 15)}...` : $presence.spotify.song}<br>
                     {#if $presence.spotify.artist == 'Sqwore'}
                     <span class="rgbtq">🎤 Sqwore 👑</span><br>
@@ -109,7 +109,7 @@
             {#if activityWithSessionId}
                 <div class="flex items-center">
                     <div class="text-container text-base md:text-lg md:text-md text-center mr-4">
-                        @em 🐈<br>
+                        @lionz 🐈<br>
                         {activityWithSessionId.name}
                         <!-- {activityWithSessionId.state} -->
                         {#if activityWithSessionId.details}
@@ -131,7 +131,7 @@
             {:else}
                 <div class="flex items-center">
                     <div class="text-container text-base md:text-lg md:text-md text-center mr-4">
-                        @em 🐈<br>
+                        @lionz 🐈<br>
                         {$presence.discord_status || "error fetching status"}<br>
                         {localTime}
                     </div>

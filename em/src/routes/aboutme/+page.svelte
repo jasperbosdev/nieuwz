@@ -19,6 +19,10 @@
     </div>
 </div>
 
+<svelte:head>
+    <title>@lionz 🐈 About Me</title>
+</svelte:head>
+
 <div class="yapping mb-10">
     <p>Hello!!! I go by my online alias Lionz<br>Just a silly guy who primarily plays Counter-Strike and osu! and if not, most of the time 
     you can find me in Visual Studio Code.<br>Because I ruined my music taste I now listen to artists like Sqwore, t1de, but I also 

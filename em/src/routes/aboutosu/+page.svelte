@@ -2,6 +2,10 @@
     import tilt  from 'svelte-tilt';
 </script>
 
+<svelte:head>
+    <title>@lionz 🐈 About Osu</title>
+</svelte:head>
+
 <div class="playstyle mb-10">
     <p class="bold text-6xl"><span class="text-fuchsia-400">/a</span>boutosu</p>
     <div class="flex flex-row items-center">

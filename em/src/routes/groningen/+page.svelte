@@ -45,6 +45,10 @@
     $: usersWithHardcoded = [hardcodedUser, ...users];
 </script>
 
+<svelte:head>
+    <title>@lionz 🐈 Groningen</title>
+</svelte:head>
+
 <div class="deck-border">
     <div class="gro-header flex flex-col">
         <div class="gro-img flex justify-center">
