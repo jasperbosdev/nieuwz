@@ -6,7 +6,7 @@
     <p class="bold text-5xl"><span class="text-fuchsia-400">Pr</span>ojects</p>
 </div>
 
-<div class="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+<div class="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 mb-10">
     <div class="project-single" use:tilt={{ strength: 0.9, scale: 1.05, xAxis: true, transition: 150 }}>
         <div class="project-overview flex items-center justify-between">
             <div class="project-title text-3xl">
@@ -78,8 +78,7 @@
             </div>
         </div>
     </div>
-</div>
-
-<div class="mt-3">
-    <a href="#/" class="text-fuchsia-400 support">Show more.</a>
+    <div class="mt-3">
+        <a href="#/" class="text-fuchsia-400 support">Show more.</a>
+    </div>
 </div>
