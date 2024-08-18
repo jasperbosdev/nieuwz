@@ -2,7 +2,7 @@
     import tilt  from 'svelte-tilt';
 </script>
 
-<div class="grid grid-cols-3 playstyle mb-10">
+<div class="playstyle mb-10">
     <div class="col-span-2">
         <p class="bold text-6xl"><span class="text-fuchsia-400">/</span>me</p>
         Hii, I'm Lionz | he/him | 18+
@@ -16,10 +16,6 @@
             <!-- svelte-ignore a11y-missing-attribute -->
             <img class="w-12" src="/emotes/blah.jpg">
         </div>
-    </div>
-    <div class="activity-card flex justify-end items-center">
-        <!-- svelte-ignore a11y-missing-attribute -->
-        <!-- <img src="/pfpp.jpg" class="w-32 rounded-lg"> -->
     </div>
 </div>
 
@@ -64,9 +60,9 @@
 </div> -->
 
 <div class="fav-artists">
-    <p class="bold text-5xl"><span class="text-fuchsia-400">Fa</span>vorite Artists</p>
+    <p class="bold text-4xl md:text-5xl"><span class="text-fuchsia-400">Fa</span>vorite Artists</p>
     <div class="">
-        <div class="flex flex-wrap gap-4 mt-5 justify-between">
+        <div class="flex flex-wrap gap-4 mt-5 justify-center md:justify-between">
             <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
                 <!-- svelte-ignore a11y-missing-attribute -->
                 <a href="https://open.spotify.com/artist/2IGZnq5Ot1NquCpks3zO4o" target="_blank">
@@ -112,7 +108,7 @@
             </div>
         </div>
     </div>
-    <div class="mt-3">
+    <div class="mt-3 hidden md:block">
         <a href="#/" class="text-fuchsia-400 support">Show more.</a>
     </div>
 </div>
