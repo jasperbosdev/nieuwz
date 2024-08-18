@@ -119,7 +119,7 @@
       </div>
       
 
-      <div class="py-16">
+      <div class="py-8 md:py-16">
         {#key $currentPath}
           <div
             in:fly={{ x: -200, duration: 400, delay: 150 }}
