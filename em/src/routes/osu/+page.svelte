@@ -61,7 +61,7 @@
         settings (also outdated)</a> and <a href="https://www.youtube.com/watch?v=OrD620-JnoM" target="_blank" 
         class="text-fuchsia-400 support">here is a older liveplay</a> to see everything in action.
     </div>
-    <div class="activity-card flex justify-end items-center">
+    <div class="activity-card flex justify-center md:justify-end items-center">
         <div class="deck-border items-center text-center" use:tilt={{ strength: 1.5, scale: 1.1 }}>
             <span class="text-sm">List of my Periferals and Hardware</span><br>
             <a href="https://tinyurl.com/24pz43xx" target="_blank" class="text-fuchsia-400 support">Gigabyte Ultrawide 144hz Monitor</a><br>
@@ -88,7 +88,7 @@
     </div> 
 </div>
 
-<div class="mb-4">
+<div class="py-5">
     <p class="bold text-5xl"><span class="text-fuchsia-400">Sk</span>ins</p>
     <span class="text-sm">Last updated: 18.08.2024</span>
 </div>
@@ -110,8 +110,8 @@
             <div class="project-footer flex items-center">
                 <a href="#/" target="_blank" class="hover:scale-105 transition duration-200">
                     <i class="fas fa-share mr-1"></i>
-                    <span class="text-base">download skin</span>
-                    <span class="text-xs p-0">(click image for a larger preview)</span>
+                    <span class="text-sm md:text-base">download skin</span>
+                    <span class="text-xs p-0">(click img for large preview)</span>
                 </a>
             </div>
         </div>
@@ -132,8 +132,8 @@
             <div class="project-footer flex items-center">
                 <a href="#/" target="_blank" class="hover:scale-105 transition duration-200">
                     <i class="fas fa-share mr-1"></i>
-                    <span class="text-base">download skin</span>
-                    <span class="text-xs p-0">(click image for a larger preview)</span>
+                    <span class="text-sm md:text-base">download skin</span>
+                    <span class="text-xs p-0">(click img for large preview)</span>
                 </a>
             </div>
         </div>
@@ -154,8 +154,8 @@
             <div class="project-footer flex items-center">
                 <a href="#/" target="_blank" class="hover:scale-105 transition duration-200">
                     <i class="fas fa-share mr-1"></i>
-                    <span class="text-base">download skin</span>
-                    <span class="text-xs p-0">(click image for a larger preview)</span>
+                    <span class="text-sm md:text-base">download skin</span>
+                    <span class="text-xs p-0">(click img for large preview)</span>
                 </a>
             </div>
         </div>
