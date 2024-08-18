@@ -112,4 +112,7 @@
             </div>
         </div>
     </div>
+    <div class="mt-3">
+        <a href="#/" class="text-fuchsia-400 support">Show more.</a>
+    </div>
 </div>
