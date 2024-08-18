@@ -40,7 +40,7 @@
     });
 </script>
 
-<div class="grid grid-rows-1 grid-flow-col mb-10 grid-cols-3"> <!-- maybe add 1.5em x padding to even with nav items-->
+<div class="grid grid-rows-1 grid-flow-col mb-10 grid-cols-1 md:grid-cols-3"> <!-- maybe add 1.5em x padding to even with nav items-->
     <div class="me-card col-span-2">
         <p class="bold text-6xl"><span class="text-fuchsia-400">/</span>osu</p>
         <p>
@@ -51,7 +51,7 @@
     </div>
 </div>
 
-<div class="grid grid-cols-3 gap-6 playstyle">
+<div class="md:grid md:grid-cols-3 gap-6 playstyle">
     <div class="col-span-2 py-5">
         <p class="bold text-5xl mb-4"><span class="text-fuchsia-400">Pl</span>aystyle</p>
         This is my current playstyle/setup for osu! Click <a href="/current.jpg" target="_blank" class="text-fuchsia-400">here
@@ -77,7 +77,7 @@
 </div>
 
 <!-- scroll indicator -->
-<div class="py-10">
+<div class="hidden md:block py-10">
     <div class="split deck-split text-center flex justify-center items-center">
         <span>There is more below!</span>
         <div class="mouse">
