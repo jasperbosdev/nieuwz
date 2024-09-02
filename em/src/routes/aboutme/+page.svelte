@@ -1,5 +1,6 @@
 <script lang="ts">
     import tilt  from 'svelte-tilt';
+    import Artists from './artists.svelte';
 </script>
 
 <div class="playstyle mb-10">
@@ -63,56 +64,4 @@
     </div> 
 </div> -->
 
-<div class="fav-artists">
-    <p class="bold text-4xl md:text-5xl"><span class="text-fuchsia-400">Fa</span>vorite Artists</p>
-    <div class="">
-        <div class="flex flex-wrap gap-4 mt-5 justify-center md:justify-between">
-            <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
-                <!-- svelte-ignore a11y-missing-attribute -->
-                <a href="https://open.spotify.com/artist/2IGZnq5Ot1NquCpks3zO4o" target="_blank">
-                    <img src="/artists/sqwore.jpg" class="rounded-lg w-32">
-                </a>
-                <p class="text-center mt-3">Sqwore</p>
-            </div>
-            <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
-                <!-- svelte-ignore a11y-missing-attribute -->
-                <a href="https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz?si=6MlTTIUCR5SydLRv1Lm27Q" target="_blank">
-                    <img src="/artists/park.jpeg" class="rounded-lg w-32">
-                </a>
-                <p class="text-center mt-3">Linkin Park</p>
-            </div>
-            <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
-                <!-- svelte-ignore a11y-missing-attribute -->
-                <a href="https://open.spotify.com/artist/2TM0qnbJH4QPhGMCdPt7fH" target="_blank">
-                    <img src="/artists/neck.jpg" class="rounded-lg w-32">
-                </a>
-                <p class="text-center mt-3">Neck Deep</p>
-            </div>
-            
-            <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
-                <!-- svelte-ignore a11y-missing-attribute -->
-                <a href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz" target="_blank">
-                    <img src="/artists/wrld.jpg" class="rounded-lg w-32">
-                </a>
-                <p class="text-center mt-3">Juice WRLD</p>
-            </div>
-            <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
-                <!-- svelte-ignore a11y-missing-attribute -->
-                <a href="https://open.spotify.com/artist/0cmSXx965Hnm6fP42oW6vY" target="_blank">
-                    <img src="/artists/angel.jpg" class="rounded-lg w-32">
-                </a>
-                <p class="text-center mt-3">Origami Angel</p>
-            </div>
-            <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
-                <!-- svelte-ignore a11y-missing-attribute -->
-                <a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" target="_blank">
-                    <img src="/artists/one.jpg" class="rounded-lg w-32">
-                </a>
-                <p class="text-center mt-3">ONE OK ROCK</p>
-            </div>
-        </div>
-    </div>
-    <div class="mt-3 hidden md:block">
-        <a href="#/" class="text-fuchsia-400 support">Show more.</a>
-    </div>
-</div>
+<Artists />
