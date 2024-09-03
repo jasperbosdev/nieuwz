@@ -47,11 +47,26 @@
 <div class="grid grid-rows-1 grid-flow-col mb-10 grid-cols-1 md:grid-cols-3"> <!-- maybe add 1.5em x padding to even with nav items-->
     <div class="me-card col-span-2">
         <p class="bold text-6xl"><span class="text-fuchsia-400">/</span>osu</p>
+        <div class="flex flex-row items-center mb-2">
+            <span class="flex text-sm md:text-lg items-center">
+                former top 🌐 987 | <img src="/NL.svg" class="rounded h-5 mx-2"> 20 | <img src="/GR.svg" class=" h-4 mx-2 rounded"> 1 @11,328pp
+            </span>
+        </div>
         <p>
             Here you can learn more about my playstyle, the hardware I use to play and all the skins I play with. Check out my <a href="/aboutosu" 
             class="text-fuchsia-400 support">/aboutosu</a> page if you wanna learn more about my achievements and other minute details 
             about my osu! journey.
         </p>
+        <p class="mt-2 text-sm">
+            I still play osu from time to time, mostly offline or on my own <a class="text-fuchsia-400 support" href="https://komako.pw" 
+            target="_blank">private server</a> for fun or with friends.
+        </p>
+        <details style="font-size: 12px; cursor: help;" class="mt-2">
+            <summary>Why don't you play on bancho?</summary>
+            <br>I don't really go out of my way to tell people anymore, most of them who ask, try to poke fun at me but that doesn't work 
+            nor do I care about what people might think of me :3<br><br>
+            TLDR; A major factor is the quality and state of the game, which has fallen to an all time low.
+        </details>
     </div>
 </div>
 
