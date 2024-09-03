@@ -32,17 +32,56 @@
             img: "/artists/one.jpg",
             spotifyLink: "https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO"
         },
+        {
+            artist: "Superheaven",
+            img: "/artists/superheaven.jpg",
+            spotifyLink: "https://open.spotify.com/artist/1IHjrY7ygKbmLVoUV1VcXc"
+        },
+        {
+            artist: "Yeat",
+            img: "/artists/yeat.jpg",
+            spotifyLink: "https://open.spotify.com/artist/3qiHUAX7zY4Qnjx8TNUzVx"
+        },
+        {
+            artist: "t1de",
+            img: "/artists/t1de.jpg",
+            spotifyLink: "https://open.spotify.com/artist/49tDmEsh9WIXqL6cmzENtu"
+        },
+        {
+            artist: "17 SEVENTEEN",
+            img: "/artists/17.jpg",
+            spotifyLink: "https://open.spotify.com/artist/496nklFjflGjJOhhfhH2Nc"
+        },
+        {
+            artist: "RomancePlanet",
+            img: "/artists/romance.jpg",
+            spotifyLink: "https://open.spotify.com/artist/37wN6xD9duyyxRWmObUUxE"
+        },
+        {
+            artist: "Title Fight",
+            img: "/artists/fight.jpg",
+            spotifyLink: "https://open.spotify.com/artist/2CnhqfjUG0qzsru0SMuhrk"
+        }
     ]
 
     let visibleArtists = 6;
 
     function showMore() {
         if (visibleArtists + 3 <= favArtists.length) {
-            visibleArtists += 3;
+            visibleArtists += 6;
         } else {
             visibleArtists = favArtists.length;
         }
     }
+
+    function showLess() {
+        if (visibleArtists > 6) {
+            visibleArtists -= 6;
+        } else {
+            visibleArtists = 6;
+        }
+    }
+    
 </script>
 
 <div class="fav-artists">
@@ -63,6 +102,13 @@
     <div class="mt-3">
         <!-- svelte-ignore a11y-invalid-attribute -->
         <a href="javascript:void(0)" on:click={showMore} class="text-fuchsia-400 support">Show more</a>
+    </div>
+    {/if}
+
+    {#if visibleArtists > 6}
+    <div class="mt-3">
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <a href="javascript:void(0)" on:click={showLess} class="text-fuchsia-400 support">Show less</a>
     </div>
     {/if}
 
