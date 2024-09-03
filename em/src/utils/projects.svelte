@@ -55,7 +55,7 @@
     <p class="bold text-5xl"><span class="text-fuchsia-400">Pr</span>ojects</p>
 </div>
 
-<div class="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-0 md:gap-y-6">
+<div class="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
     {#each projects.slice(0, visibleProjects) as project}
         <div class="project-single" use:tilt={{ strength: 0.9, scale: 1.05, xAxis: true, transition: 150 }}>
             <div class="project-overview flex items-center justify-between">
