@@ -65,7 +65,7 @@
 
     <h2 id="osu-status" class="text-2xl font-bold">
         {#if loading}
-            <p class="text-center">Retrieving the latest information, give it a second....</p>
+            <p class="text-center mt-2 text-xl">Pinging @ Wait What's Server in Lithuania for the latest information, give it a second....</p>
         {:else}
             <p></p>
         {/if}
