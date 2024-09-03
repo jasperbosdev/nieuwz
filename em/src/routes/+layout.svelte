@@ -79,16 +79,16 @@
           </div>
           <div class="around-nav has-dropdown">
             <div class="nav-item" class:active={$currentPath === '/aboutme' || $currentPath === '/aboutosu'}>
-              <a href="#/">/about</a>
+              <a href="/aboutme">/about</a>
             </div>
-            <div class="nav-dropdown">
+            <!-- <div class="nav-dropdown">
               <div class="dropdown-item">
                 <a href="/aboutme">/me</a>
               </div>
               <div class="dropdown-item">
                 <a href="/aboutosu">/osu</a>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="around-nav">
             <div class="nav-item" class:active={$currentPath === '/osu'}>
