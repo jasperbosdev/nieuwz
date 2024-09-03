@@ -59,7 +59,7 @@
             Player rankings for <a href="https://maps.app.goo.gl/x3sK7vFnJ5Vmpj9d8" class="text-fuchsia-400 support" 
             target="_blank">Groningen</a>, The Netherlands<br> Automatically updated every 2 hours! <a href="#/" class="text-fuchsia-400
             support">(more info here)</a>
-            <p class="text-sm mt-2">(click avatar to visite their profile)</p>
+            <p class="text-sm mt-2">(click avatar to visit their profile)</p>
         </div>
     </div>
 
