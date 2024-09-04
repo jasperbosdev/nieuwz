@@ -86,17 +86,18 @@
         </div>
     {/each}
 
-    {#if visibleSkins < Skins.length}
+</div>
+
+{#if visibleSkins < Skins.length}
     <div class="mt-3">
         <!-- svelte-ignore a11y-invalid-attribute -->
         <a href="javascript:void(0)" on:click={showMore} class="text-fuchsia-400 support">Show more</a>
     </div>
-    {/if}
+{/if}
 
-    {#if visibleSkins > 3}
+{#if visibleSkins > 3}
     <div class="mt-3">
         <!-- svelte-ignore a11y-invalid-attribute -->
         <a href="javascript:void(0)" on:click={showLess} class="text-fuchsia-400 support">Show Less</a>
     </div>
-    {/if}
-</div>
+{/if}
