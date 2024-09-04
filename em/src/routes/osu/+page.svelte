@@ -16,17 +16,15 @@
             </span>
         </div>
         <p>
-            Here you can learn more about my playstyle, the hardware I use to play and all the skins I play with. Check out my <a href="/aboutosu" 
-            class="text-fuchsia-400 support">/aboutosu</a> page if you wanna learn more about my achievements and other minute details 
-            about my osu! journey.
+            Here you can learn more about my playstyle, the hardware I use to play and all the skins I play with.
         </p>
         <p class="mt-2 text-sm">
             I still play osu from time to time, mostly offline or on my own <a class="text-fuchsia-400 support" href="https://komako.pw" 
-            target="_blank">private server</a> for fun or with friends.
+            target="_blank">private server</a> for fun or with friends, check it out!
         </p>
         <details style="font-size: 12px; cursor: help;" class="mt-2">
             <summary>Why don't you play on bancho?</summary>
-            <br>I don't really go out of my way to tell people anymore, most of them who ask, try to poke fun at me but that doesn't work 
+            <br>I don't really go out of my way to tell people anymore, most of them who ask try to poke fun at me but that doesn't work 
             nor do I care about what people might think of me :3<br><br>
             TLDR; A major factor is the quality and state of the game, which has fallen to an all time low.
         </details>
