@@ -6,6 +6,46 @@
   import { createBackground } from '../utils/background';
   import { fly } from 'svelte/transition';
 
+  let backgroundVisible = true;
+
+  // Utility function to get a cookie value by name
+  function getCookie(name: string): string | null {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift() || null;
+    return null;
+  }
+
+  // Utility function to set a cookie
+  function setCookie(name: string, value: string, days: number) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+  }
+
+  // Function to hide background divs
+  function hideBackground() {
+    document.querySelector('.viewport')!.style.display = 'none';
+    document.querySelector('.viewport-bg')!.style.display = 'none';
+  }
+
+  // Function to show background divs
+  function showBackground() {
+    document.querySelector('.viewport')!.style.display = 'block';
+    document.querySelector('.viewport-bg')!.style.display = 'block';
+  }
+
+  // Function to toggle the background visibility
+  function toggleBackground(isVisible: boolean) {
+    backgroundVisible = isVisible;
+    if (backgroundVisible) {
+      showBackground();
+      setCookie('backgroundVisible', 'true', 30);
+    } else {
+      hideBackground();
+      setCookie('backgroundVisible', 'false', 30);
+    }
+  }
+
   const currentPath = derived(page, $page => $page.url.pathname);
 
   let currentYear = new Date().getFullYear();
@@ -37,6 +77,18 @@
         }
       });
     }
+
+    // Check the saved state from the cookie
+    const savedState = getCookie('backgroundVisible');
+    backgroundVisible = savedState !== 'false';
+    
+    // Apply the correct state
+    if (!backgroundVisible) {
+      hideBackground();
+    } else {
+      showBackground();
+    }
+
   });
 </script>
 
@@ -64,6 +116,8 @@
             </button>
           </div>
           <div class="brand avi block md:hidden">
+            <a href="#/"><i class="fa fa-eye-slash fa-xl"></i></a>
+            <a href="#/"><i class="fa fa-eye fa-xl"></i></a>
             <a href="https://ko-fi.com/leeuwz" target="_blank" class="support">
               <i class="fa fa-heart fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
             </a>
@@ -112,9 +166,26 @@
           </div>
         </div>
         <div class="brand avi hidden md:block md:flex md:items-center">
-          <a href="https://ko-fi.com/leeuwz" target="_blank" class="support">
-            <i class="fa fa-heart fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
-          </a>
+          <div class="flex gap-x-2">
+            <div class="toggle-buttons">
+              <!-- enabled -->
+              {#if backgroundVisible}
+                <a href="#/" on:click={(e) => { e.preventDefault(); toggleBackground(false); }} class="support">
+                  <i class="fa fa-eye-slash fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
+                </a>
+              {/if}
+            
+              <!-- disabled -->
+              {#if !backgroundVisible}
+                <a href="#/" on:click={(e) => { e.preventDefault(); toggleBackground(true); }} class="support">
+                  <i class="fa fa-eye fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
+                </a>
+              {/if}
+            </div>
+            <a href="https://ko-fi.com/leeuwz" target="_blank" class="support">
+              <i class="fa fa-heart fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
+            </a>
+          </div>
         </div>
       </div>
       
