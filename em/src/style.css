@@ -101,6 +101,10 @@ body {
 	color: #f13292;
 }
 
+.social {
+	cursor: help;
+}
+
 .viewport {
 	position: fixed;
 	top: 0;
