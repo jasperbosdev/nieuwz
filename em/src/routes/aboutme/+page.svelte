@@ -1,6 +1,7 @@
 <script lang="ts">
     import tilt  from 'svelte-tilt';
     import Artists from './artists.svelte';
+    import Songs from './songs.svelte';
 </script>
 
 <div class="playstyle mb-10">
@@ -32,28 +33,9 @@
     class="text-fuchsia-400 support">home page</a> if you haven't already!</p>
 </div>
 
-<!-- <div class="misc">
-    <div class="mb-4">
-        <p class="bold text-5xl"><span class="text-fuchsia-400">Mi</span>sc</p>
-    </div>
-    <div class="project-container flex flex-row flex-wrap gap-6">
-        <div class="project-single" use:tilt={{ strength: 0.9, scale: 1.05, xAxis: true, transition: 150 }}>
-            <p class="mb-1">PC Specs</p>
-            <p>
-                CPU: Ryzen 5600x<br>MOBO: MSI B550 Gaming Plus<br> RAM: 32GB Vengenace Pro 3200MHZ<br>GPU: Asus TUF RTX 3070
-            </p>
-        </div>
-        <div class="project-single" use:tilt={{ strength: 0.9, scale: 1.05, xAxis: true, transition: 150 }}>
-            123
-        </div>
-        <div class="project-single" use:tilt={{ strength: 0.9, scale: 1.05, xAxis: true, transition: 150 }}>
-            123
-        </div>
-    </div>
-</div> -->
+<Artists />
 
-<!-- scroll indicator -->
-<!-- <div class="py-10">
+<div class="py-5">
     <div class="split deck-split text-center flex justify-center items-center">
         <span>There is more below!</span>
         <div class="mouse">
@@ -62,6 +44,6 @@
             </div>
         </div>
     </div> 
-</div> -->
+</div>
 
-<Artists />
+<Songs />
