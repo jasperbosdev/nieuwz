@@ -27,7 +27,7 @@
             spotifyLink: "https://open.spotify.com/track/4Ub9rNZn644QkrTdML26by?si=bf08af5eb7ae44f2"
         },
         {
-            title: "недошедшее",
+            title: "недошедшее письмо",
             artist: "Sqwore",
             cover: "/covers/road.jpg",
             spotifyLink: "https://open.spotify.com/track/5xYthQcLSVMEKfncegEZeN?si=5e6ba7cd146846de"
