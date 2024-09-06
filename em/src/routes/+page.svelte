@@ -50,9 +50,4 @@
     </div>
 </div>
 
-<!-- divider -->
-<!-- <div class="mb-20">
-    <div class="split deck-split text-center">🐈</div> 
-</div> -->
-
 <Projects />
