@@ -92,6 +92,15 @@
   });
 </script>
 
+<svelte:head>
+  <meta property="og:title" content="@lionz 🐈" />
+  <meta property="og:description" content="some silly guy on the internet." />
+  <meta name="theme-color" content="#FF00FF" />
+  <meta name="keywords" content="Lionz, leeuwz, komako, komako.pw, lionz komako, lionz osu, lionz osu profile, lionz website, leeuwz osu" />
+  <meta property="og:image" content="https://c.tenor.com/wTuLX2YrZs0AAAAC/tenor.gif" />
+  <meta property="og:image:type" content="image/gif" />
+</svelte:head>
+
 <div class="viewport"></div>
 <div class="viewport-bg"></div>
 <!-- background -->

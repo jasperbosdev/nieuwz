@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-   <title>@lionz 🐈</title>
+    <title>@lionz 🐈</title>
 </svelte:head>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 gap-10 md:gap-0">

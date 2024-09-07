@@ -23,6 +23,8 @@
 
 <svelte:head>
     <title>@lionz 🐈 About Me</title>
+    <meta property="og:title" content="@lionz 🐈 About Me" />
+    <meta property="og:description" content="Find out more about me." />
 </svelte:head>
 
 <div class="yapping mb-10">
