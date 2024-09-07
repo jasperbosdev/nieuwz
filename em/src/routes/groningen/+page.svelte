@@ -49,6 +49,7 @@
     <title>@lionz 🐈 Groningen</title>
     <meta property="og:title" content="@lionz 🐈 Groningen" />
     <meta property="og:description" content="Leaderboard for Grunn osu players #freelionz" />
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="https://c.tenor.com/fzCIlIKpbvQAAAAC/tenor.gif" />
     <meta property="og:image:type" content="image/gif" />
 </svelte:head>
