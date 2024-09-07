@@ -26,10 +26,10 @@
 </svelte:head>
 
 <div class="yapping mb-10">
-    <p>Hello!!! I go by my online alias Lionz<br>Just a silly guy who primarily plays Counter-Strike and osu! and if not, most of the time 
+    <p>Hello!!! I go by my online alias Lionz.<br>Just a silly guy who primarily plays Counter-Strike and osu! and if not, most of the time 
     you can find me in Visual Studio Code.<br>Because of my silly music taste I like to listen to artists like Sqwore, t1de, but I also 
     love all kinds of Rock, Metal, Hyperpop and Rap!<br>Make sure to also check out my 
-    <a href="/aboutosu" class="text-fuchsia-400 support">about osu</a> page or my projects on the <a href="/" 
+    <a href="/osu" class="text-fuchsia-400 support">osu</a> page or my projects on the <a href="/" 
     class="text-fuchsia-400 support">home page</a> if you haven't already!</p>
 </div>
 
