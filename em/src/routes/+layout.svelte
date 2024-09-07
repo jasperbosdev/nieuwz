@@ -116,11 +116,26 @@
             </button>
           </div>
           <div class="brand avi block md:hidden">
-            <a href="#/"><i class="fa fa-eye-slash fa-xl"></i></a>
-            <a href="#/"><i class="fa fa-eye fa-xl"></i></a>
-            <a href="https://ko-fi.com/leeuwz" target="_blank" class="support">
-              <i class="fa fa-heart fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
-            </a>
+            <div class="flex gap-x-2">
+              <div class="toggle-buttons">
+                <!-- enabled -->
+                {#if backgroundVisible}
+                  <a href="#/" on:click={(e) => { e.preventDefault(); toggleBackground(false); }} class="support">
+                    <i class="fa fa-eye-slash fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
+                  </a>
+                {/if}
+              
+                <!-- disabled -->
+                {#if !backgroundVisible}
+                  <a href="#/" on:click={(e) => { e.preventDefault(); toggleBackground(true); }} class="support">
+                    <i class="fa fa-eye fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
+                  </a>
+                {/if}
+              </div>
+              <a href="https://ko-fi.com/leeuwz" target="_blank" class="support">
+                <i class="fa fa-heart fa-xl transition delay-0 duration-300 hover:-translate-y-1.5"></i>
+              </a>
+            </div>
           </div>
         </div>
         
