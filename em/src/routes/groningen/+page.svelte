@@ -52,6 +52,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="https://c.tenor.com/fzCIlIKpbvQAAAAC/tenor.gif" />
     <meta property="og:image:type" content="image/gif" />
+    <meta name="keywords" content="Lionz, leeuwz, komako, komako.pw, lionz komako, lionz osu, lionz osu profile, lionz website, leeuwz osu, lionz groningen" />
 </svelte:head>
 
 <div class="deck-border">

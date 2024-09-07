@@ -25,6 +25,13 @@
 
 <svelte:head>
     <title>@lionz 🐈</title>
+    <meta property="og:title" content="@lionz 🐈" />
+    <meta property="og:description" content="some silly guy on the internet." />
+    <meta name="theme-color" content="#FF00FF" />
+    <meta name="keywords" content="Lionz, leeuwz, komako, komako.pw, lionz komako, lionz osu, lionz osu profile, lionz website, leeuwz osu" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://c.tenor.com/wTuLX2YrZs0AAAAC/tenor.gif" />
+    <meta property="og:image:type" content="image/gif" />
 </svelte:head>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 gap-10 md:gap-0">

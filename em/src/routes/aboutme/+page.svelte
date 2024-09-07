@@ -25,6 +25,11 @@
     <title>@lionz 🐈 About Me</title>
     <meta property="og:title" content="@lionz 🐈 About Me" />
     <meta property="og:description" content="Find out more about me." />
+    <meta name="theme-color" content="#FF00FF" />
+    <meta name="keywords" content="Lionz, leeuwz, komako, komako.pw, lionz komako, lionz osu, lionz osu profile, lionz website, leeuwz osu" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://c.tenor.com/wTuLX2YrZs0AAAAC/tenor.gif" />
+    <meta property="og:image:type" content="image/gif" />
 </svelte:head>
 
 <div class="yapping mb-10">
