@@ -175,7 +175,7 @@
             </div>
             <div class="nav-dropdown">
               <div class="dropdown-item">
-                <a href="/groningen">/groningen</a>
+                <a href="/groningen" class="text-nowrap">/groningen</a>
               </div>
             </div>
           </div>
