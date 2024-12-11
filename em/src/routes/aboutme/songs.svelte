@@ -3,16 +3,16 @@
 
     const favSongs = [
         {
-            title: "дорога",
+            title: "Завтра",
             artist: "Sqwore",
-            cover: "/covers/road.jpg",
-            spotifyLink: "https://open.spotify.com/track/4QAj5AZDtyqKt9TMSTd01R?si=ef5939b43dd44f69"
+            cover: "/covers/eve2.jpg",
+            spotifyLink: "https://open.spotify.com/track/3eQ6P45X35fqqbEY05IBe9?si=eedae54afdec4bac"
         },
         {
-            title: "Can't be replaced",
-            artist: "Juice WRLD",
-            cover: "/covers/replaced.jpg",
-            spotifyLink: "https://open.spotify.com/track/5kelosFpKw4DTEwoKHhMwe?si=587c595b2a5c4991"
+            title: "protagonist",
+            artist: "Sqwore",
+            cover: "/covers/eve2alt.jpg",
+            spotifyLink: "https://open.spotify.com/track/668Ppy0gnwnmT2haVmBY4j?si=86cc1c06bcbe427f"
         },
         {
             title: "коммунарка",
@@ -21,10 +21,10 @@
             spotifyLink: "https://open.spotify.com/track/0dqnN8TxVhDDN3vnksgM2c?si=b74a4214b0ce4b04"
         },
         {
-            title: "Told Ya",
-            artist: "Yeat",
-            cover: "/covers/up2me.jpg",
-            spotifyLink: "https://open.spotify.com/track/4Ub9rNZn644QkrTdML26by?si=bf08af5eb7ae44f2"
+            title: "soCiO",
+            artist: "Sqwore",
+            cover: "/covers/loap.jpg",
+            spotifyLink: "https://open.spotify.com/track/0oMOCtGFv0A0wBrtFl86f5?si=f305aceae2984f56"
         },
         {
             title: "недошедшее письмо",
@@ -33,16 +33,16 @@
             spotifyLink: "https://open.spotify.com/track/5xYthQcLSVMEKfncegEZeN?si=5e6ba7cd146846de"
         },
         {
+            title: "carefree",
+            artist: "Sqwore",
+            cover: "/covers/eve2.jpg",
+            spotifyLink: "https://open.spotify.com/track/5N12IKAY0YjQvP7eKNQiQ3?si=e2b0ec31a2f74953"
+        },
+        {
             title: "Plug",
             artist: "Juice WRLD",
             cover: "/covers/drug.jpg",
             spotifyLink: "https://open.spotify.com/track/1wWzyb3dUzgRNIteCJdqjb?si=fd836eac6d2a426c"
-        },
-        {
-            title: "Serpents",
-            artist: "Neck Deep",
-            cover: "/covers/life.jpg",
-            spotifyLink: "https://open.spotify.com/track/4SqIMK3ILlAsC4FkVgC4Lf?si=ebc56d5c905d43c6"
         },
         {
             title: "девочка в окне напротив",
@@ -98,6 +98,7 @@
 
 <div class="fav-artists">
     <p class="bold text-4xl md:text-5xl"><span class="text-fuchsia-400">Fa</span>vorite Songs</p>
+    <p class="text-sm text-zinc-400">Stream Eve 2 by Sqwore on Spotify!!!</p>
         <div class="flex flex-wrap gap-4 mt-5 justify-center md:justify-between">
             {#each favSongs.slice(0, visibleSongs) as { title, artist, cover, spotifyLink }}
                 <div class="artist-card" use:tilt={{ strength: 1.5, scale: 1.1 }}>
