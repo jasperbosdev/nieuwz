@@ -7,4 +7,4 @@ Hosting my Groningen API component and some personal things about me.
 
 ## Authors
 
-[@leeuwz](https://twitter.com/leeuwuz)
+![image](https://github.com/user-attachments/assets/42e8fc14-e9b6-49b4-b372-e14257c02d21)
